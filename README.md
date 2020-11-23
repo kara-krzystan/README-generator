@@ -1,1 +1,1 @@
-# Node.js: README Generator Challenge
+# Node.js Challenge: README Generator
