@@ -3,9 +3,7 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user
-//const questions = [
-    const promptUser = () => {
-        return inquirer.prompt([
+const questions = [
     {
         type: 'input',
         name: 'title',
@@ -72,20 +70,26 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
         message: 'If users have questions or comments, can they contact you? If yes, enter your contact information here',
     },
 
-//];
-]);
-    };
-
-    promptUser().then(answers => console.log(answers));
+];
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Your README has been generated! Find it where now?')
+    });
+};
 
 // function to initialize program
 function init() {
-
-}
+    inquirer.prompt(questions)
+    .then(data => {
+        const readmeData = generateMarkdown(data);
+        writeToFile('./output/README.md', readmeData);
+    });
+};
 
 // function call to initialize program
 init();
