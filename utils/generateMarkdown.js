@@ -1,9 +1,10 @@
 const fs = require('fs');
 
-// function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
+
+  ![License](https://img.shields.io/badge/License-${data.license}-9cf.svg)
 
   ## Table of Contents
   * [Project Description](#description)
@@ -23,7 +24,7 @@ function generateMarkdown(data) {
   ## Project Links
   ${data.link}
 
-  ## How to Install
+  ## Installation Instructions
   ${data.installation}
 
   ## Usage
@@ -41,17 +42,15 @@ function generateMarkdown(data) {
   ## Contribute to this Project
   ${data.contribute}
 
-  ## Contact
-  ${data.contact}
+  ## Questions?
+  Contact the developer if you have questions or comments about this project
+  * Email: <${data.email}>
+  * GitHub: <https://github.com/${data.username}>
 
   ## License
-  ${data.license}
-
+  This project is licensed under the terms of the ${data.license} license.  
+ 
 `;
 }
 
 module.exports = generateMarkdown;
-
-// put markdown outline inside function?
-// make table of contents autofill?
-// make a link?

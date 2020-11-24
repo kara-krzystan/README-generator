@@ -2,7 +2,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// array of questions for user
 const questions = [
     {
         type: 'input',
@@ -60,11 +59,34 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contact',
-        message: 'Enter your contact information here, including email and GitHub username',
+        name: 'username',
+        message: 'What is your GitHub username? (Required)',
+        validate: usernameInput => {
+            if (usernameInput) {
+              return true;
+            }
+              else {
+                  console.log('Please enter your GitHub username');
+              return false;
+            }
+        }
     },
     {
-        type: 'checkbox',
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address? (Required)',
+        validate: emailInput => {
+            if (emailInput) {
+              return true;
+            }
+              else {
+                console.log('Please enter your email address');
+              return false;
+            }
+        }
+    },
+    {
+        type: 'list',
         name: 'license',
         message: 'Please choose a license type for your repository (select one)',
         choices: [
@@ -81,10 +103,8 @@ const questions = [
             'LGPLv2.1' ,
             'Microsoft Public']
     },
-
 ];
 
-// function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
         if (err) {
@@ -94,7 +114,6 @@ function writeToFile(fileName, data) {
     });
 };
 
-// function to initialize program
 function init() {
     inquirer.prompt(questions)
     .then(data => {
@@ -103,5 +122,4 @@ function init() {
     });
 };
 
-// function call to initialize program
 init();

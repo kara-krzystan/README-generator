@@ -1,10 +1,12 @@
 
   # Sample Project
 
+  ![License](https://img.shields.io/badge/License-GNU GPLv2-9cf.svg)
+
   ## Table of Contents
   * [Project Description](#description)
   * [Project Links](#link)
-  * [Installation Instrucions](#installation)
+  * [Installation Instructions](#installation)
   * [Usage](#usage)
   * [Features](#features)
   * [Tests](#tests)
@@ -19,7 +21,7 @@
   ## Project Links
   
 
-  ## How to Install
+  ## Installation Instructions
   
 
   ## Usage
@@ -34,12 +36,14 @@
   ## Credits
   
 
-  ## Contributing to this Project
+  ## Contribute to this Project
   
 
-  ## Contact
-  
+  ## Questions?
+  Contact the developer if you have questions or comments about this project
+  * Email: <email-address>
+  * GitHub: <https://github.com/user-name>
 
   ## License
-  
-
+  This project is licensed under the terms of the GNU GPLv2 license.  
+ 
