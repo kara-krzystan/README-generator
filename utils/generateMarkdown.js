@@ -5,8 +5,23 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ## Description:
+  ## Table of Contents
+  * [Project Description](#description)
+  * [Project Links](#link)
+  * [Installation Instructions](#installation)
+  * [Usage](#usage)
+  * [Features](#features)
+  * [Tests](#tests)
+  * [Credits](#credits)
+  * [How to Contribute to this Project](#contribute)
+  * [Contact the Developer](#contact)
+  * [License](#license) 
+
+  ## Description
   ${data.description}
+
+  ## Project Links
+  ${data.link}
 
   ## How to Install
   ${data.installation}
@@ -20,17 +35,17 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
 
-  ## License
-  ${data.license}
+  ## Credits
+  ${data.credits}
 
-  ## Contributing
+  ## Contribute to this Project
   ${data.contribute}
-
-  ## Project Links
-  ${data.link}
 
   ## Contact
   ${data.contact}
+
+  ## License
+  ${data.license}
 
 `;
 }
@@ -39,3 +54,4 @@ module.exports = generateMarkdown;
 
 // put markdown outline inside function?
 // make table of contents autofill?
+// make a link?

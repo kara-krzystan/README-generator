@@ -21,17 +21,17 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Add your Project Description'
+        message: 'Please add a detailed and informative Project Description'
     },
-    // {
-    //     type: 'input',
-    //     name: 'contents',
-    //     message: 'Would you like to include a Table of Contents? If so, ',
-    // },
+    {
+        type: 'input',
+        name: 'link',
+        message: 'Enter the GitHub link to your project'
+    },
     {
         type: 'input',
         name: 'installation',
-        message: 'Describe how to install your application'
+        message: 'Describe the steps and requirements for installing your application'
     },
     {
         type: 'input',
@@ -41,7 +41,7 @@ const questions = [
     {
         type: 'input',
         name: 'features',
-        message: 'Describe additional features (optional)'
+        message: "Describe your project's noteworthy features (optional)"
     },
     {
         type: 'input',
@@ -49,25 +49,37 @@ const questions = [
         message: 'Are there any tests for your application? If so, include them here'
     },
     {
-        type: 'checkbox',
-        name: 'license',
-        message: 'Please select a license type',
-        choices: ['', '', '', '',]
+        type: 'input',
+        name: 'credits',
+        message: 'List your collaborators and any assets used that require attribution'
     },
     {
         type: 'input',
         name: 'contribute',
-        message: 'Can users contribute? Describe instuctions and guidelines for contributin to this project'
-    },
-    {
-        type: 'input',
-        name: 'link',
-        message: 'Enter the GitHub link to your project'
+        message: 'Can users contribute? Describe instuctions and guidelines for contributing to this project'
     },
     {
         type: 'input',
         name: 'contact',
-        message: 'If users have questions or comments, can they contact you? If yes, enter your contact information here',
+        message: 'Enter your contact information here, including email and GitHub username',
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Please choose a license type for your repository (select one)',
+        choices: [
+            'GNU GPLv2' ,
+            'GNU GPLv3' ,
+            'MIT' ,
+            'Academic Free License v3.0' ,
+            'Apache-2.0' ,
+            'BSD' ,
+            'BSD 2' ,
+            'BSD 3' ,
+            'Eclipse 1.0' ,
+            'Eclipse 2.0' ,
+            'LGPLv2.1' ,
+            'Microsoft Public']
     },
 
 ];
@@ -78,7 +90,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('Your README has been generated! Find it where now?')
+        console.log('Your README has been generated! Find it in the output folder')
     });
 };
 
