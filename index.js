@@ -21,42 +21,48 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: '',
+        message: 'Add your Project Description'
     },
-    {
-        type: 'input',
-        name: 'contents',
-        message: '',
-    },
+    // {
+    //     type: 'input',
+    //     name: 'contents',
+    //     message: 'Would you like to include a Table of Contents? If so, ',
+    // },
     {
         type: 'input',
         name: 'installation',
-        message: '',
+        message: 'Describe how to install your application'
     },
     {
         type: 'input',
         name: 'usage',
-        message: '',
+        message: 'Provide usage instructions, helpful tips, examples, demos and/or screenshots here'
     },
     {
         type: 'input',
         name: 'features',
-        message: '',
+        message: 'Describe additional features (optional)'
     },
     {
         type: 'input',
         name: 'tests',
-        message: '',
+        message: 'Are there any tests for your application? If so, include them here'
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Please select a license type',
+        choices: ['', '', '', '',]
     },
     {
         type: 'input',
-        name: 'license',
-        message: '',
+        name: 'link',
+        message: 'Enter the GitHub link to your project'
     },
     {
         type: 'input',
         name: 'contact',
-        message: '',
+        message: 'If users have questions or comments, can they contact you? If yes, enter your contact information here',
     },
 
 ];
