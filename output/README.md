@@ -1,7 +1,7 @@
 
   # Sample Project
 
-  ![License](https://img.shields.io/badge/License-GNU GPLv2-9cf.svg)
+  ![License](https://img.shields.io/badge/License-MIT-9cf.svg)
 
   ## Table of Contents
   * [Project Description](#description)
@@ -16,13 +16,13 @@
   * [License](#license) 
 
   ## Description
-  
+  This sample demonstrates the README Generator
 
   ## Project Links
-  
+
 
   ## Installation Instructions
-  
+
 
   ## Usage
   
@@ -31,19 +31,18 @@
   
 
   ## Tests
-  
+
 
   ## Credits
   
 
   ## Contribute to this Project
-  
 
   ## Questions?
   Contact the developer if you have questions or comments about this project
-  * Email: <email-address>
-  * GitHub: <https://github.com/user-name>
+  * Email: <email@email>
+  * GitHub: <https://github.com/github user>
 
   ## License
-  This project is licensed under the terms of the GNU GPLv2 license.  
+  This project is licensed under the terms of the MIT license.  
  
