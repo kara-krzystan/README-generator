@@ -16,16 +16,16 @@
   * [License](#license) 
 
   ## Description
-  This is a sample for the demo
+  This is a demo for the README
 
   ## Project Links
   github.com
 
   ## Installation Instructions
-  Click "install"
+  
 
   ## Usage
-  See screenshots for tips
+  
 
   ## Features
   
@@ -34,10 +34,10 @@
   
 
   ## Credits
-  node.js, inquirer
+  
 
   ## Contribute to this Project
-  Yes please email me
+  
 
   ## Questions?
   Contact the developer if you have questions or comments about this project
